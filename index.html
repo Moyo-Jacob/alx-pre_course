@@ -525,7 +525,7 @@ document.querySelectorAll(".js-wa").forEach(function(a, i){
   a.addEventListener("click", function(){
     var where = (a.closest("section,header,footer,.mbar,.float,#player") || {}).id || a.className;
     var p = {content_name:"Black Friday video edit", content_category:"Video editing", value:15000, currency:"NGN", cta:(a.textContent||"WhatsApp").trim().slice(0,60), position:where};
-    px("Lead", p); px("Contact", p);
+    px("Lead", p); px("Contact", p); px("InitiateCheckout", {value:15000, currency:"NGN", num_items:1, content_name:"Black Friday video edit", content_category:"Video editing"});
   });
 });
 var _openPlayer = openPlayer;
