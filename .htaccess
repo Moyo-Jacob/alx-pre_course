@@ -1,0 +1,7 @@
+RedirectMatch 404 /\.git
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType video/mp4 "access plus 7 days"
+ExpiresByType image/jpeg "access plus 7 days"
+</IfModule>
+AddType video/mp4 .mp4
