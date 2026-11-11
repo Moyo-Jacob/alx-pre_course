@@ -1,3 +1,4 @@
+DirectoryIndex index.html
 RedirectMatch 404 /\.git
 <IfModule mod_expires.c>
 ExpiresActive On
